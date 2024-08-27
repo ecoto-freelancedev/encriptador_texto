@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header class="logo">
+        <img class="logo__imagen" src="assets/Logo.png" alt="logo">
+    </header>
+    <main class="encriptador">
+        <section class="encriptador__contenido">
+            <textarea name="textarea" class="encriptador__contenido__texto"
+                placeholder="Ingrese el texto aquí"></textarea>
+            <div class="encriptador__contenido__botones__contenedor">
+                <h6 class="encriptador__contenido__subtitulo"><img src="assets/bi_exclamation-circle-fill.png"
+                        alt="icono">Solo letras minúsculas y sin acento</h6>
+                <div class="encriptador__contenido__botones">
+                    <a href="#" class="encriptador__contenido__botones__encriptar"
+                        onclick="btnEncriptar()">Encriptar</a>
+                    <a href="#" class="encriptador__contenido__botones__desencriptar"
+                        onclick="btnDesencriptar()">Desencriptar</a>
+                </div>
+            </div>
+
+        </section>
+        <section class="encriptador__resultado">
+            <textarea name="textarea" class="encriptador__resultado__mensaje"></textarea>
+            <a href="#" class="encriptador__resultado__boton__copiar" onclick="copiarTexto()">Copiar</a>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Eduardo</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
